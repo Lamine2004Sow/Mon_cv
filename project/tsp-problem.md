@@ -14,15 +14,15 @@ title: Résolution du TSP
 
 Le problème du voyageur de commerce (*Traveling Salesperson Problem*, TSP) est un classique de l’optimisation combinatoire.
 
-L’objectif est de trouver un **cycle hamiltonien de coût minimum** dans un graphe complet \( G = (V, E) \).
+L’objectif est de trouver un **cycle hamiltonien de coût minimum** dans un graphe complet 
 
-Si \( c_{ij} \) est la distance entre la ville \( i \) et la ville \( j \), on cherche à minimiser :
+$ G = (V, E) $.
 
-\[
-\min \sum_{i \in V} \sum_{j \in V, j \neq i} c_{ij} x_{ij}
-\]
+Si $c_{ij} $ est la distance entre la ville $i $ et la ville $ j $, on cherche à minimiser :
 
-où \( x_{ij} \) est une variable binaire égale à 1 si l’arc \( (i, j) \) est utilisé.
+**$\min \sum_{i \in V} \sum_{j \in V, j \neq i} c_{ij} x_{ij}$**
+
+où $ x_{ij} $ est une variable binaire égale à 1 si l’arc $ (i, j) $ est utilisé.
 
 ---
 
@@ -30,7 +30,7 @@ où \( x_{ij} \) est une variable binaire égale à 1 si l’arc \( (i, j) \) es
 
 Pour aborder ce problème, j’ai suivi les étapes suivantes :
 
-- **Génération de données** : création de 50 villes aléatoires avec coordonnées \( (x, y) \)
+- **Génération de données** : création de 50 villes aléatoires avec coordonnées $ (x, y) $
 - **Modélisation exacte** : utilisation d’un solveur (Gurobi ou CBC) via l’API Python
 - **Heuristique** : implémentation d’un algorithme du *plus proche voisin* pour comparer les temps d’exécution
 
@@ -70,7 +70,7 @@ J’ai comparé l’approche exacte et l’approche gloutonne.
 
 ### Analyse
 
-On remarque que le temps de résolution exacte **augmente de manière exponentielle** avec \( N \), ce qui confirme la complexité **NP-difficile** du problème.
+On remarque que le temps de résolution exacte **augmente de manière exponentielle** avec $ N $, ce qui confirme la complexité **NP-difficile** du problème.
 
 ---
 
@@ -78,7 +78,7 @@ On remarque que le temps de résolution exacte **augmente de manière exponentie
 
 Ce TP m’a permis de comprendre les **limites des solveurs exacts** en optimisation combinatoire.
 
-Pour des instances industrielles (\( N > 1000 \)), il est impératif d’utiliser des **métaheuristiques** telles que :
+Pour des instances industrielles ($ N > 1000 $), il est impératif d’utiliser des **métaheuristiques** telles que :
 
 - Algorithmes génétiques  
 - Recherche tabou  
