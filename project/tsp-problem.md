@@ -20,7 +20,7 @@ $ G = (V, E) $.
 
 Si $c_{ij} $ est la distance entre la ville $i $ et la ville $ j $, on cherche à minimiser :
 
-**$\min \sum_{i \in V} \sum_{j \in V, j \neq i} c_{ij} x_{ij}$**
+$\min \sum_{i \in V} \sum_{j \in V, j \neq i} c_{ij} x_{ij}$
 
 où $ x_{ij} $ est une variable binaire égale à 1 si l’arc $ (i, j) $ est utilisé.
 
