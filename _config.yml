@@ -6,12 +6,33 @@ lang: fr
 email: "lamine.2004pro.sow@gmail.com"
 github_username: "lamine2004sow"
 
+# Auteur
+author:
+  name: "Mouhamadou Lamine SOW"
+  email: "lamine.2004pro.sow@gmail.com"
+  twitter: ""
+  github: "lamine2004sow"
+
 # Jekyll settings
 markdown: kramdown
 highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO
+twitter:
+  username: ""
+  card: summary_large_image
+
+# Social
+social:
+  name: "Mouhamadou Lamine SOW"
+  links:
+    - https://github.com/lamine2004sow
+    - mailto:lamine.2004pro.sow@gmail.com
 
 # Exclude from processing
 exclude:
@@ -19,4 +40,6 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
+  - README.md
+  - ANALYSE_ET_RECOMMANDATIONS.md
 

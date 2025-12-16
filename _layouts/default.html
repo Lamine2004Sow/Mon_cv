@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ page.description | default: site.description }}">
-    <meta name="author" content="{{ site.title }}">
+    <meta name="author" content="{{ site.author.name | default: site.title }}">
+    <meta name="keywords" content="Lamine SOW, Ingénierie Informatique, Sup Galilée, Portfolio, CV, Stage, Optimisation Combinatoire, Intelligence Artificielle">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
-    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+    <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    {% if site.twitter.username %}<meta name="twitter:site" content="@{{ site.twitter.username }}">{% endif %}
+    
+    <!-- Jekyll SEO Tag -->
+    {% seo %}
     
     <title>{{ page.title }} | {{ site.title }}</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ site.baseurl }}/assets/images/favicon.svg">
+    <link rel="alternate icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -367,10 +384,25 @@
         .hidden {
             display: none !important;
         }
+        /* Skip to main content link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
     </style>
 </head>
 <body>
-    <nav class="sidebar">
+    <a href="#main-content" class="skip-link" data-fr="Aller au contenu principal" data-en="Skip to main content">Aller au contenu principal</a>
+    <nav class="sidebar" role="navigation" aria-label="Navigation principale">
         <div class="profile-area">
             <div class="profile-avatar">
                 <i class="fas fa-user"></i>
@@ -379,9 +411,9 @@
             <p data-fr="Étudiant en Ingénierie Informatique<br>Bac+4<br>Sup Galilée / Institut Galilée" data-en="Computer Engineering Student<br>Bac+4<br>Sup Galilée / Institut Galilée">Étudiant en Ingénierie Informatique<br>Bac+4<br>Sup Galilée / Institut Galilée</p>
         </div>
 
-        <div class="lang-switcher">
-            <button id="lang-fr" class="active" onclick="switchLanguage('fr')">FR</button>
-            <button id="lang-en" onclick="switchLanguage('en')">EN</button>
+        <div class="lang-switcher" role="group" aria-label="Sélecteur de langue">
+            <button id="lang-fr" class="active" onclick="switchLanguage('fr')" aria-label="Français" aria-pressed="true">FR</button>
+            <button id="lang-en" onclick="switchLanguage('en')" aria-label="English" aria-pressed="false">EN</button>
         </div>
 
         <ul class="nav-links">
@@ -442,7 +474,7 @@
         </ul>
     </nav>
 
-    <main class="main-content">
+    <main class="main-content" id="main-content" role="main">
         {{ content }}
     </main>
 
@@ -457,9 +489,13 @@
             // Update button states
             document.querySelectorAll('.lang-switcher button').forEach(btn => {
                 btn.classList.remove('active');
+                btn.setAttribute('aria-pressed', 'false');
             });
             const btn = document.getElementById(`lang-${lang}`);
-            if (btn) btn.classList.add('active');
+            if (btn) {
+                btn.classList.add('active');
+                btn.setAttribute('aria-pressed', 'true');
+            }
             
             // Update all text elements
             document.querySelectorAll('[data-fr][data-en]').forEach(el => {
