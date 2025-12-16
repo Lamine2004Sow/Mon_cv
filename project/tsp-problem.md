@@ -5,7 +5,7 @@ title: Résolution du TSP
 
 # Optimisation du Voyageur de Commerce (TSP)
 
-**Date :** 16 Décembre 2025  \
+**Date :** Décembre 2024  \
 **Auteur :** Mouhamadou Lamine SOW  \
 **Cours :** Optimisation Combinatoire  \
 ---

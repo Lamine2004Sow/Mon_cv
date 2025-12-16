@@ -1,0 +1,22 @@
+title: "Mouhamadou Lamine SOW - Portfolio"
+description: "Étudiant en Ingénierie Informatique | Sup Galilée | Portfolio académique et professionnel"
+baseurl: "/Mon_cv"
+url: "https://lamine2004sow.github.io"
+lang: fr
+email: "lamine.2004pro.sow@gmail.com"
+github_username: "lamine2004sow"
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
