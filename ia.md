@@ -14,9 +14,19 @@ lang: fr
 
 ## <span data-fr="Projets Disponibles" data-en="Available Projects">Projets Disponibles</span>
 
-<span data-fr="Les projets dans cette section seront publiés prochainement." data-en="Projects in this section will be published soon.">Les projets dans cette section seront publiés prochainement.</span>
+### <span data-fr="Dilemme du prisonnier itere - multi-agents" data-en="Iterated Prisoner's Dilemma - multi-agent">Dilemme du prisonnier itere - multi-agents</span>
 
-<span data-fr="Revenez bientôt pour découvrir mes travaux en intelligence artificielle !" data-en="Check back soon to discover my work in artificial intelligence!">Revenez bientôt pour découvrir mes travaux en intelligence artificielle !</span>
+<span data-fr="Simulation complete avec agents fixes, Q-learning et optimisation anticipative, plus statistiques et visualisations." data-en="Complete simulation with fixed agents, Q-learning, and anticipative optimization, plus statistics and visualizations.">Simulation complete avec agents fixes, Q-learning et optimisation anticipative, plus statistiques et visualisations.</span>
+
+[<span data-fr="📄 Lire la page projet" data-en="📄 Read the project page">📄 Lire la page projet</span>]({{ site.baseurl }}/project/dilemme-du-prisonnier)
+
+---
+
+### <span data-fr="AquaticLife - Co-evolution morphologie-controle" data-en="AquaticLife - Morphology-control co-evolution">AquaticLife - Co-evolution morphologie-controle</span>
+
+<span data-fr="Projet de recherche sur l'emergence de strategies de nage en fluide 2D (RL + neuro-evolution)." data-en="Research project on the emergence of swimming strategies in 2D fluid (RL + neuro-evolution).">Projet de recherche sur l'emergence de strategies de nage en fluide 2D (RL + neuro-evolution).</span>
+
+[<span data-fr="📄 Lire la page projet" data-en="📄 Read the project page">📄 Lire la page projet</span>]({{ site.baseurl }}/project/aquaticlife)
 
 ---
 

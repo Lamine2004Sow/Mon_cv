@@ -32,7 +32,7 @@
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/images/apple-touch-icon.png">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- MathJax -->
@@ -42,19 +42,19 @@
     <style>
         :root {
             --sidebar-width: 280px;
-            --primary-color: #2563eb;
-            --primary-dark: #1e40af;
-            --secondary-color: #64748b;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --bg-primary: #ffffff;
-            --bg-secondary: #f8fafc;
-            --border-color: #e2e8f0;
-            --accent-color: #10b981;
-            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --primary-color: #1f4e5f;
+            --primary-dark: #153845;
+            --secondary-color: #6b7280;
+            --text-primary: #1b2230;
+            --text-secondary: #4a5568;
+            --bg-primary: #fbf8f3;
+            --bg-secondary: #f2ede4;
+            --border-color: #e3ddd3;
+            --accent-color: #d08a4b;
+            --shadow-sm: 0 4px 12px rgba(27, 34, 48, 0.08);
+            --shadow-md: 0 16px 28px rgba(27, 34, 48, 0.12);
+            --shadow-lg: 0 26px 48px rgba(27, 34, 48, 0.16);
+            --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * {
@@ -64,24 +64,39 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-family: 'Manrope', 'Segoe UI', sans-serif;
             color: var(--text-primary);
-            background: var(--bg-primary);
+            background: linear-gradient(160deg, #fefbf6 0%, #f5f1e8 55%, #fbf8f3 100%);
             line-height: 1.7;
             display: flex;
             min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(31, 78, 95, 0.08), transparent 45%),
+                radial-gradient(circle at 85% 10%, rgba(208, 138, 75, 0.12), transparent 40%),
+                radial-gradient(circle at 20% 80%, rgba(27, 34, 48, 0.08), transparent 45%);
+            z-index: -1;
         }
 
         /* Sidebar */
         .sidebar {
             width: var(--sidebar-width);
-            background: var(--bg-secondary);
+            background: rgba(251, 248, 243, 0.9);
             border-right: 1px solid var(--border-color);
             padding: 2rem 1.5rem;
             position: fixed;
             height: 100vh;
             overflow-y: auto;
             z-index: 100;
+            box-shadow: var(--shadow-sm);
+            backdrop-filter: blur(10px);
         }
 
         .profile-area {
@@ -89,12 +104,13 @@
             margin-bottom: 2rem;
             padding-bottom: 2rem;
             border-bottom: 1px solid var(--border-color);
+            animation: fadeUp 0.6s ease both;
         }
 
         .profile-avatar {
             width: 100px;
             height: 100px;
-            border-radius: 50%;
+            border-radius: 32px;
             background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
             margin: 0 auto 1rem;
             display: flex;
@@ -157,7 +173,19 @@
 
         .nav-links li {
             margin-bottom: 0.25rem;
+            animation: fadeUp 0.5s ease both;
         }
+
+        .nav-links li:nth-child(1) { animation-delay: 0.05s; }
+        .nav-links li:nth-child(2) { animation-delay: 0.08s; }
+        .nav-links li:nth-child(3) { animation-delay: 0.11s; }
+        .nav-links li:nth-child(4) { animation-delay: 0.14s; }
+        .nav-links li:nth-child(5) { animation-delay: 0.17s; }
+        .nav-links li:nth-child(6) { animation-delay: 0.2s; }
+        .nav-links li:nth-child(7) { animation-delay: 0.23s; }
+        .nav-links li:nth-child(8) { animation-delay: 0.26s; }
+        .nav-links li:nth-child(9) { animation-delay: 0.29s; }
+        .nav-links li:nth-child(10) { animation-delay: 0.32s; }
 
         .nav-section-title {
             font-size: 0.75rem;
@@ -184,13 +212,13 @@
         }
 
         .nav-links a:hover {
-            background: white;
+            background: var(--bg-primary);
             color: var(--primary-color);
             transform: translateX(4px);
         }
 
         .nav-links a.active {
-            background: white;
+            background: var(--bg-primary);
             color: var(--primary-color);
             box-shadow: var(--shadow-sm);
         }
@@ -200,18 +228,31 @@
             text-align: center;
         }
 
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* Main Content */
         .main-content {
             margin-left: var(--sidebar-width);
             padding: 3rem 4rem;
-            max-width: 900px;
+            max-width: 920px;
             width: 100%;
             min-height: 100vh;
+            animation: fadeUp 0.6s ease both;
         }
 
         /* Typography */
         h1 {
-            font-size: 2.5rem;
+            font-family: 'Fraunces', serif;
+            font-size: 2.6rem;
             font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 1rem;
@@ -221,7 +262,8 @@
         }
 
         h2 {
-            font-size: 1.875rem;
+            font-family: 'Fraunces', serif;
+            font-size: 1.9rem;
             font-weight: 600;
             color: var(--text-primary);
             margin-top: 2.5rem;
@@ -231,7 +273,8 @@
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-family: 'Fraunces', serif;
+            font-size: 1.55rem;
             font-weight: 600;
             color: var(--text-primary);
             margin-top: 2rem;
@@ -239,6 +282,7 @@
         }
 
         h4 {
+            font-family: 'Fraunces', serif;
             font-size: 1.25rem;
             font-weight: 600;
             color: var(--text-primary);
@@ -269,7 +313,7 @@
             border-radius: 0.25rem;
             font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
             font-size: 0.9em;
-            color: #e83e8c;
+            color: var(--primary-color);
         }
 
         pre {
@@ -397,6 +441,13 @@
         }
         .skip-link:focus {
             top: 0;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
+            }
         }
     </style>
 </head>

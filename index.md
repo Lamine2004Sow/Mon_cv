@@ -8,7 +8,7 @@ lang: fr
 
 <span data-fr="Bonjour, je suis **Mouhamadou Lamine SOW**, étudiant en **Ingénierie Informatique** à **Sup Galilée**." data-en="Hello, I am **Mouhamadou Lamine SOW**, a **Computer Engineering** student at **Sup Galilée**.">Bonjour, je suis **Mouhamadou Lamine SOW**, étudiant en **Ingénierie Informatique** à **Sup Galilée**.</span>
 
-<span data-fr="Ce site regroupe mes travaux de recherche, mes rapports de projets et mes publications académiques. Je suis actuellement à la recherche d'un **stage** dans les domaines du développement logiciel, de l'optimisation combinatoire et de l'intelligence artificielle." data-en="This site brings together my research work, project reports and academic publications. I am currently looking for an **internship** in software development, combinatorial optimization and artificial intelligence.">Ce site regroupe mes travaux de recherche, mes rapports de projets et mes publications académiques. Je suis actuellement à la recherche d'un **stage** dans les domaines du développement logiciel, de l'optimisation combinatoire et de l'intelligence artificielle.</span>
+<span data-fr="Ce site regroupe mes travaux de recherche, mes rapports de projets et des notes techniques a orientation academique et industrielle. Je suis actuellement a la recherche d'un **stage** dans les domaines du developpement logiciel, de l'optimisation combinatoire et de l'intelligence artificielle." data-en="This site brings together my research work, project reports, and technical notes with both academic and industry focus. I am currently looking for an **internship** in software development, combinatorial optimization and artificial intelligence.">Ce site regroupe mes travaux de recherche, mes rapports de projets et des notes techniques a orientation academique et industrielle. Je suis actuellement a la recherche d'un **stage** dans les domaines du developpement logiciel, de l'optimisation combinatoire et de l'intelligence artificielle.</span>
 
 ---
 
@@ -16,7 +16,7 @@ lang: fr
 
 <span data-fr="Ce site fonctionne comme un **Open Lab Book**." data-en="This site functions as an **Open Lab Book**.">Ce site fonctionne comme un **Open Lab Book**.</span>
 
-<span data-fr="J'y publie mes rapports au format web afin de faciliter la lecture, le partage et la valorisation de mon travail académique." data-en="I publish my reports in web format to facilitate reading, sharing and showcasing my academic work.">J'y publie mes rapports au format web afin de faciliter la lecture, le partage et la valorisation de mon travail académique.</span>
+<span data-fr="J'y publie mes rapports au format web afin de faciliter la lecture, le partage et la valorisation de mon travail academique et applique." data-en="I publish my reports in web format to facilitate reading, sharing and showcasing my academic and applied work.">J'y publie mes rapports au format web afin de faciliter la lecture, le partage et la valorisation de mon travail academique et applique.</span>
 
 ---
 
@@ -45,8 +45,10 @@ lang: fr
 
 ## <span data-fr="Derniers Travaux" data-en="Latest Work">Derniers Travaux</span>
 
-- **<span data-fr="Résolution du TSP" data-en="TSP Resolution">Résolution du TSP</span>** : <span data-fr="Approche par programmation linéaire et heuristiques" data-en="Linear programming and heuristic approaches">Approche par programmation linéaire et heuristiques</span>
-- **<span data-fr="Portfolio Web" data-en="Web Portfolio">Portfolio Web</span>** : <span data-fr="Création de ce portfolio avec Jekyll et GitHub Pages" data-en="Creation of this portfolio with Jekyll and GitHub Pages">Création de ce portfolio avec Jekyll et GitHub Pages</span>
+- **[<span data-fr="Anneau-etoile (Ring-Star)" data-en="Ring-Star Problem">Anneau-etoile (Ring-Star)</span>]({{ site.baseurl }}/project/ring-star)** : <span data-fr="Heuristiques + option exacte PuLP, workflow reproductible" data-en="Heuristics + optional exact PuLP, reproducible workflow">Heuristiques + option exacte PuLP, workflow reproductible</span>
+- **[<span data-fr="Dilemme du prisonnier itere" data-en="Iterated Prisoner's Dilemma">Dilemme du prisonnier itere</span>]({{ site.baseurl }}/project/dilemme-du-prisonnier)** : <span data-fr="Simulation multi-agents, RL et optimisation" data-en="Multi-agent simulation, RL and optimization">Simulation multi-agents, RL et optimisation</span>
+- **[<span data-fr="AquaticLife" data-en="AquaticLife">AquaticLife</span>]({{ site.baseurl }}/project/aquaticlife)** : <span data-fr="Co-evolution morphologie-controle en fluide 2D" data-en="Morphology-control co-evolution in 2D fluid">Co-evolution morphologie-controle en fluide 2D</span>
+- **[<span data-fr="Moteur de formules C++" data-en="C++ Formula Engine">Moteur de formules C++</span>]({{ site.baseurl }}/project/moteur-formules)** : <span data-fr="Parsing, derivation symbolique, export DOT" data-en="Parsing, symbolic differentiation, DOT export">Parsing, derivation symbolique, export DOT</span>
 
 ---
 

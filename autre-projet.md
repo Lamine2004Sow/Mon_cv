@@ -14,9 +14,17 @@ lang: fr
 
 ## <span data-fr="Projets Disponibles" data-en="Available Projects">Projets Disponibles</span>
 
-<span data-fr="Les projets dans cette section seront publiés prochainement." data-en="Projects in this section will be published soon.">Les projets dans cette section seront publiés prochainement.</span>
+### <span data-fr="Moteur de formules C++" data-en="C++ Formula Engine">Moteur de formules C++</span>
 
-<span data-fr="Revenez bientôt pour découvrir mes autres travaux !" data-en="Check back soon to discover my other work!">Revenez bientôt pour découvrir mes autres travaux !</span>
+<span data-fr="Bibliotheque C++ pour parser, evaluer, deriver et simplifier des expressions, avec export DOT." data-en="C++ library to parse, evaluate, differentiate, and simplify expressions, with DOT export.">Bibliotheque C++ pour parser, evaluer, deriver et simplifier des expressions, avec export DOT.</span>
+
+[<span data-fr="📄 Lire la page projet" data-en="📄 Read the project page">📄 Lire la page projet</span>]({{ site.baseurl }}/project/moteur-formules)
+
+---
+
+### <span data-fr="Portfolio Web" data-en="Web Portfolio">Portfolio Web</span>
+
+<span data-fr="Creation du portfolio academique et professionnel (Jekyll + GitHub Pages) avec design moderne et navigation bilingue." data-en="Creation of the academic and professional portfolio (Jekyll + GitHub Pages) with modern design and bilingual navigation.">Creation du portfolio academique et professionnel (Jekyll + GitHub Pages) avec design moderne et navigation bilingue.</span>
 
 ---
 

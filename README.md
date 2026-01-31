@@ -26,7 +26,11 @@ Portfolio académique et professionnel construit avec Jekyll et déployé sur Gi
 │   └── images/          # Images et favicon
 ├── project/
 │   ├── tsp-problem.md   # Rapport TSP
-│   └── knapsack-problem.md
+│   ├── knapsack-problem.md
+│   ├── ring-star.md     # Projet anneau-etoile (Ring-Star)
+│   ├── dilemme-du-prisonnier.md
+│   ├── aquaticlife.md
+│   └── moteur-formules.md
 ├── index.md             # Page d'accueil
 ├── cv.md                # CV détaillé
 ├── optimisation.md      # Section optimisation
@@ -122,10 +126,11 @@ Ce projet est sous licence MIT.
 - ✅ Ajout du Gemfile pour la gestion des dépendances
 - ✅ Amélioration des meta tags SEO
 - ✅ Ajout de plugins Jekyll (sitemap, SEO)
-- ✅ Amélioration de l'accessibilité (ARIA, navigation clavier)
+- ✅ Amelioration de l'accessibilite (ARIA, navigation clavier)
 - ✅ Ajout d'un favicon
 - ✅ Création d'un .gitignore complet
+- ✅ Ajout des pages projets (ring-star, dilemme, aquaticlife, moteur C++)
 
 ---
 
-*Dernière mise à jour : Décembre 2024*
+*Derniere mise a jour : Janvier 2026*

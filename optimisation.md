@@ -28,9 +28,17 @@ lang: fr
 
 ---
 
+### <span data-fr="Anneau-etoile (Ring-Star) - SAE Optimisation 2025-2026" data-en="Ring-Star - SAE Optimization 2025-2026">Anneau-etoile (Ring-Star) - SAE Optimisation 2025-2026</span>
+
+<span data-fr="Resolution complete d'instances TSPLIB95 avec heuristiques, descente stochastique et option exacte via PuLP, accompagnee de visualisations." data-en="Complete TSPLIB95 resolution with heuristics, stochastic descent, and an optional exact PuLP formulation, with visualizations.">Resolution complete d'instances TSPLIB95 avec heuristiques, descente stochastique et option exacte via PuLP, accompagnee de visualisations.</span>
+
+[<span data-fr="📄 Lire la page projet" data-en="📄 Read the project page">📄 Lire la page projet</span>]({{ site.baseurl }}/project/ring-star)
+
+---
+
 ## <span data-fr="Knapsack et Problèmes d'Affectation" data-en="Knapsack and Assignment Problems">Knapsack et Problèmes d'Affectation</span>
 
-<span data-fr="À venir : Travaux sur le problème du sac à dos (Knapsack) et les problèmes d'affectation." data-en="Coming soon: Work on the Knapsack problem and assignment problems.">À venir : Travaux sur le problème du sac à dos (Knapsack) et les problèmes d'affectation.</span>
+<span data-fr="Travaux en preparation sur le probleme du sac a dos (Knapsack) et les problemes d'affectation." data-en="Work in progress on the Knapsack problem and assignment problems.">Travaux en preparation sur le probleme du sac a dos (Knapsack) et les problemes d'affectation.</span>
 
 ---
 

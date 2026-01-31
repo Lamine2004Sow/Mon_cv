@@ -62,6 +62,42 @@ lang: fr
 
 ---
 
+### <span data-fr="SAE Optimisation 2025-2026 - Anneau-etoile (Ring-Star)" data-en="SAE Optimization 2025-2026 - Ring-Star">SAE Optimisation 2025-2026 - Anneau-etoile (Ring-Star)</span>
+<span data-fr="**Statut** : Projet termine" data-en="**Status** : Completed project">**Statut** : Projet termine</span>
+
+<span data-fr="Pipeline complet : lecture TSPLIB95, heuristiques, descente stochastique et option exacte PuLP, avec visualisations." data-en="Full pipeline: TSPLIB95 parsing, heuristics, stochastic descent, and optional exact PuLP solving, with visualizations.">Pipeline complet : lecture TSPLIB95, heuristiques, descente stochastique et option exacte PuLP, avec visualisations.</span>
+
+[<span data-fr="Voir la page projet" data-en="View project page">Voir la page projet</span>]({{ site.baseurl }}/project/ring-star)
+
+---
+
+### <span data-fr="Dilemme du prisonnier itere - multi-agents" data-en="Iterated Prisoner's Dilemma - multi-agent">Dilemme du prisonnier itere - multi-agents</span>
+<span data-fr="**Statut** : Projet termine" data-en="**Status** : Completed project">**Statut** : Projet termine</span>
+
+<span data-fr="Simulation complete avec agents fixes, Q-learning et optimisation anticipative, plus statistiques et visualisations." data-en="Complete simulation with fixed agents, Q-learning, and anticipative optimization, plus statistics and visualizations.">Simulation complete avec agents fixes, Q-learning et optimisation anticipative, plus statistiques et visualisations.</span>
+
+[<span data-fr="Voir la page projet" data-en="View project page">Voir la page projet</span>]({{ site.baseurl }}/project/dilemme-du-prisonnier)
+
+---
+
+### <span data-fr="AquaticLife - Co-evolution morphologie-controle" data-en="AquaticLife - Morphology-control co-evolution">AquaticLife - Co-evolution morphologie-controle</span>
+<span data-fr="**Statut** : Projet en cours" data-en="**Status** : Work in progress">**Statut** : Projet en cours</span>
+
+<span data-fr="Projet de recherche sur l'emergence de formes et de strategies de nage en fluide 2D (RL + neuro-evolution)." data-en="Research project on the emergence of shapes and swimming strategies in 2D fluid (RL + neuro-evolution).">Projet de recherche sur l'emergence de formes et de strategies de nage en fluide 2D (RL + neuro-evolution).</span>
+
+[<span data-fr="Voir la page projet" data-en="View project page">Voir la page projet</span>]({{ site.baseurl }}/project/aquaticlife)
+
+---
+
+### <span data-fr="Moteur de formules C++" data-en="C++ Formula Engine">Moteur de formules C++</span>
+<span data-fr="**Statut** : Projet termine" data-en="**Status** : Completed project">**Statut** : Projet termine</span>
+
+<span data-fr="Bibliotheque C++ pour parser, evaluer, deriver et simplifier des expressions, avec export DOT." data-en="C++ library to parse, evaluate, differentiate, and simplify expressions, with DOT export.">Bibliotheque C++ pour parser, evaluer, deriver et simplifier des expressions, avec export DOT.</span>
+
+[<span data-fr="Voir la page projet" data-en="View project page">Voir la page projet</span>]({{ site.baseurl }}/project/moteur-formules)
+
+---
+
 ### <span data-fr="Portfolio Web Professionnel" data-en="Professional Web Portfolio">Portfolio Web Professionnel</span>
 <span data-fr="**Date** : 2024" data-en="**Date** : 2024">**Date** : 2024</span>
 
@@ -89,5 +125,4 @@ lang: fr
 
 ---
 
-<span data-fr="*Dernière mise à jour : Décembre 2024*" data-en="*Last updated: December 2024*">*Dernière mise à jour : Décembre 2024*</span>
-
+<span data-fr="*Derniere mise a jour : Janvier 2026*" data-en="*Last updated: January 2026*">*Derniere mise a jour : Janvier 2026*</span>
