@@ -1,3 +1,9 @@
+---
+layout: default
+title: Exemples d'utilisation des démos
+lang: fr
+---
+
 # Exemples d'utilisation des démos
 
 Ce fichier montre des exemples concrets d'utilisation des démos dans vos pages de projet.
@@ -28,6 +34,18 @@ $$
 
 ## Exemple 2 : Visualisation Matplotlib
 
+**Résultat :**
+
+{% include demo.html 
+   type="matplotlib" 
+   id="resultats-optimisation"
+   src="/assets/demos/resultats.png"
+   title="Résultats de l'optimisation"
+   description="Comparaison des solutions heuristiques vs exactes"
+%}
+
+**Code à utiliser :**
+
 ```liquid
 {% include demo.html 
    type="matplotlib" 
@@ -39,6 +57,20 @@ $$
 ```
 
 ## Exemple 3 : Démo Three.js (3D)
+
+**Résultat :**
+
+{% include demo.html 
+   type="threejs" 
+   id="visualisation-3d-tsp"
+   src="{{ site.baseurl }}/assets/demos/simple-threejs.js"
+   width="100%"
+   height="400px"
+   title="Visualisation 3D du TSP"
+   description="Explorez la solution en 3D avec rotation et zoom"
+%}
+
+**Code à utiliser :**
 
 ```liquid
 {% include demo.html 
@@ -102,6 +134,20 @@ animate();
 
 ## Exemple 4 : Démo Gymnasium (Reinforcement Learning)
 
+**Résultat :**
+
+{% include demo.html 
+   type="gymnasium" 
+   id="env-cartpole"
+   src="/assets/demos/cartpole-demo.js"
+   width="100%"
+   height="400px"
+   title="Environnement CartPole"
+   description="Simulation d'un agent RL dans l'environnement CartPole"
+%}
+
+**Code à utiliser :**
+
 ```liquid
 {% include demo.html 
    type="gymnasium" 
@@ -115,6 +161,20 @@ animate();
 ```
 
 ## Exemple 5 : Graphique Plotly interactif
+
+**Résultat :**
+
+{% include demo.html 
+   type="plotly" 
+   id="comparaison-algorithmes"
+   src="{{ site.baseurl }}/assets/demos/simple-plotly.json"
+   width="100%"
+   height="400px"
+   title="Comparaison des algorithmes"
+   description="Graphique interactif comparant les performances"
+%}
+
+**Code à utiliser :**
 
 ```liquid
 {% include demo.html 
@@ -151,6 +211,20 @@ animate();
 
 ## Exemple 6 : Animation Canvas 2D
 
+**Résultat :**
+
+{% include demo.html 
+   type="2d" 
+   id="animation-algorithme"
+   src="{{ site.baseurl }}/assets/demos/simple-2d.js"
+   width="100%"
+   height="300px"
+   title="Animation de l'algorithme"
+   description="Visualisation étape par étape de l'algorithme de résolution"
+%}
+
+**Code à utiliser :**
+
 ```liquid
 {% include demo.html 
    type="2d" 
@@ -164,6 +238,28 @@ animate();
 ```
 
 ## Exemple 7 : Démo avec code source
+
+**Résultat :**
+
+{% include demo.html 
+   type="matplotlib" 
+   id="demo-avec-code"
+   src="/assets/demos/graphique.png"
+   title="Graphique avec code"
+   description="Visualisation générée avec le code ci-dessous"
+   code="import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.figure(figsize=(10, 6))
+plt.plot(x, y)
+plt.title('Graphique Matplotlib')
+plt.savefig('graphique.png')"
+%}
+
+**Code à utiliser :**
 
 ```liquid
 {% include demo.html 

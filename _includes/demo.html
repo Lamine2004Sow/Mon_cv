@@ -25,15 +25,28 @@
   <div class="demo-wrapper" style="width: {{ include.width | default: '100%' }}; height: {{ include.height | default: '400px' }};">
     {% case include.type %}
       {% when 'threejs' %}
-        <div id="demo-{{ include.id | default: 'threejs' }}" class="demo-threejs"></div>
+        <div id="demo-{{ include.id | default: 'threejs' }}" class="demo-threejs">
+          <p class="demo-placeholder" id="placeholder-{{ include.id | default: 'threejs' }}">Chargement de la visualisation 3D...</p>
+        </div>
         {% if include.src %}
+        <script type="module">
+          import('{{ include.src }}').catch(error => {
+            console.error('Erreur lors du chargement de la démo Three.js:', error);
+            const placeholder = document.getElementById('placeholder-{{ include.id | default: 'threejs' }}');
+            if (placeholder) {
+              placeholder.textContent = 'Démo Three.js - Fichier non trouvé. Vérifiez le chemin: {{ include.src }}';
+              placeholder.style.color = '#d08a4b';
+            }
+          });
+        </script>
         <script type="module" src="{{ include.src }}"></script>
         {% endif %}
         
       {% when 'matplotlib' %}
         <div id="demo-{{ include.id | default: 'matplotlib' }}" class="demo-matplotlib">
           {% if include.src %}
-          <img src="{{ include.src }}" alt="{{ include.title | default: 'Matplotlib visualization' }}" style="max-width: 100%; height: auto;">
+          <img src="{{ include.src }}" alt="{{ include.title | default: 'Matplotlib visualization' }}" style="max-width: 100%; height: auto;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <p class="demo-placeholder" style="display: none;">Image Matplotlib non disponible. Placez votre image dans <code>{{ include.src }}</code></p>
           {% else %}
           <p class="demo-placeholder">Démo Matplotlib - Image à charger</p>
           {% endif %}
@@ -60,16 +73,34 @@
             .then(response => response.json())
             .then(data => {
               Plotly.newPlot('demo-{{ include.id | default: 'plotly' }}', data.data, data.layout);
+            })
+            .catch(error => {
+              console.error('Erreur lors du chargement du graphique Plotly:', error);
+              document.getElementById('demo-{{ include.id | default: 'plotly' }}').innerHTML = 
+                '<p style="padding: 2rem; text-align: center; color: #6b7280;">Graphique Plotly - Fichier de données non trouvé</p>';
             });
         </script>
         {% endif %}
         
       {% when '2d' %}
         <div id="demo-{{ include.id | default: '2d' }}" class="demo-2d">
-          <canvas id="canvas-{{ include.id | default: '2d' }}" width="{{ include.width | default: '800' }}" height="{{ include.height | default: '400' }}"></canvas>
+          <canvas id="canvas-{{ include.id | default: '2d' }}"></canvas>
+          <p class="demo-placeholder" id="placeholder-2d-{{ include.id | default: '2d' }}" style="display: none;">Chargement de l'animation 2D...</p>
         </div>
         {% if include.src %}
-        <script src="{{ include.src }}"></script>
+        <script>
+          const script = document.createElement('script');
+          script.src = '{{ include.src }}';
+          script.onerror = function() {
+            const placeholder = document.getElementById('placeholder-2d-{{ include.id | default: '2d' }}');
+            if (placeholder) {
+              placeholder.style.display = 'block';
+              placeholder.textContent = 'Démo 2D - Fichier non trouvé. Vérifiez le chemin: {{ include.src }}';
+              placeholder.style.color = '#d08a4b';
+            }
+          };
+          document.head.appendChild(script);
+        </script>
         {% endif %}
         
       {% when '3d' %}
