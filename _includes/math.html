@@ -1,0 +1,41 @@
+{% comment %}
+  Helper pour les formules mathématiques
+  
+  Usage:
+  {% include math.html formula="E = mc^2" display="inline" %}
+  {% include math.html formula="\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}" display="block" %}
+{% endcomment %}
+
+{% if include.display == "block" %}
+<div class="math-formula math-block">
+  $${{ include.formula }}$$
+</div>
+{% else %}
+<span class="math-formula math-inline">
+  ${{ include.formula }}$
+</span>
+{% endif %}
+
+<style>
+  .math-formula {
+    font-family: 'Computer Modern', 'Latin Modern Math', 'STIX Two Math', serif;
+  }
+  
+  .math-block {
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+  
+  .math-inline {
+    display: inline;
+  }
+  
+  /* Style pour MathJax */
+  .MathJax {
+    font-size: 1.1em;
+  }
+  
+  .MathJax_Display {
+    margin: 1.5rem 0;
+  }
+</style>
