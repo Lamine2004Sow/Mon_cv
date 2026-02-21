@@ -53,19 +53,6 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     
-    <!-- Plotly pour les graphiques interactifs -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    
-    <!-- Three.js pour les visualisations 3D -->
-    <script type="importmap">
-    {
-        "imports": {
-            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-        }
-    }
-    </script>
-    
     <style>
         :root {
             --sidebar-width: 280px;
@@ -517,6 +504,12 @@
                 </a>
             </li>
             <li>
+                <a href="{{ site.baseurl }}/project/or/ring-star/ring-star" class="{% if page.url contains 'ring-star' %}active{% endif %}">
+                    <i class="fas fa-circle-notch"></i>
+                    <span data-fr="Anneau-étoile (Ring-Star)" data-en="Ring-Star">Anneau-étoile (Ring-Star)</span>
+                </a>
+            </li>
+            <li>
                 <a href="{{ site.baseurl }}/ia" class="{% if page.url contains '/ia' %}active{% endif %}">
                     <i class="fas fa-brain"></i>
                     <span data-fr="IA / ML / RL" data-en="AI / ML / RL">IA / ML / RL</span>
@@ -544,9 +537,9 @@
                 </a>
             </li>
             <li>
-                <a href="{{ site.url }}/" target="_blank">
-                    <i class="fas fa-arrow-left"></i>
-                    <span data-fr="Retour à l'accueil" data-en="Back to Home">Retour à l'accueil</span>
+                <a href="{{ site.url }}{{ site.baseurl }}/" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span data-fr="Ouvrir le site" data-en="Open site">Ouvrir le site</span>
                 </a>
             </li>
         </ul>

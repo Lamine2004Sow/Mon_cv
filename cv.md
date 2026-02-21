@@ -58,7 +58,7 @@ lang: fr
 
 <span data-fr="**Résultats** : Comparaison des temps d'exécution et de la qualité des solutions pour différentes tailles d'instances (10, 20, 50 villes)." data-en="**Results** : Comparison of execution times and solution quality for different instance sizes (10, 20, 50 cities).">**Résultats** : Comparaison des temps d'exécution et de la qualité des solutions pour différentes tailles d'instances (10, 20, 50 villes).</span>
 
-[<span data-fr="Voir le rapport détaillé" data-en="View detailed report">Voir le rapport détaillé</span>]({{ site.baseurl }}/project/tsp-problem)
+<span data-fr="Rapport détaillé à venir." data-en="Detailed report coming soon.">Rapport détaillé à venir.</span>
 
 ---
 
@@ -67,7 +67,7 @@ lang: fr
 
 <span data-fr="Pipeline complet : lecture TSPLIB95, heuristiques, descente stochastique et option exacte PuLP, avec visualisations." data-en="Full pipeline: TSPLIB95 parsing, heuristics, stochastic descent, and optional exact PuLP solving, with visualizations.">Pipeline complet : lecture TSPLIB95, heuristiques, descente stochastique et option exacte PuLP, avec visualisations.</span>
 
-[<span data-fr="Voir la page projet" data-en="View project page">Voir la page projet</span>]({{ site.baseurl }}/project/ring-star)
+[<span data-fr="Voir la page projet" data-en="View project page">Voir la page projet</span>]({{ site.baseurl }}/project/or/ring-star/ring-star)
 
 ---
 
@@ -76,7 +76,7 @@ lang: fr
 
 <span data-fr="Simulation complete avec agents fixes, Q-learning et optimisation anticipative, plus statistiques et visualisations." data-en="Complete simulation with fixed agents, Q-learning, and anticipative optimization, plus statistics and visualizations.">Simulation complete avec agents fixes, Q-learning et optimisation anticipative, plus statistiques et visualisations.</span>
 
-[<span data-fr="Voir la page projet" data-en="View project page">Voir la page projet</span>]({{ site.baseurl }}/project/dilemme-du-prisonnier)
+<span data-fr="Page projet à venir." data-en="Project page coming soon.">Page projet à venir.</span>
 
 ---
 

@@ -27,7 +27,7 @@ lang: fr
 <span data-fr="Résolution de problèmes complexes d'optimisation combinatoire tels que le problème du voyageur de commerce (TSP) et le problème du sac à dos (Knapsack). Utilisation de solveurs de programmation linéaire (Gurobi, CBC) et d'heuristiques." data-en="Solving complex combinatorial optimization problems such as the Traveling Salesman Problem (TSP) and the Knapsack Problem. Using linear programming solvers (Gurobi, CBC) and heuristics.">Résolution de problèmes complexes d'optimisation combinatoire tels que le problème du voyageur de commerce (TSP) et le problème du sac à dos (Knapsack). Utilisation de solveurs de programmation linéaire (Gurobi, CBC) et d'heuristiques.</span>
 
 **<span data-fr="Projets" data-en="Projects">Projets</span> :**
-- [<span data-fr="Résolution du TSP" data-en="TSP Resolution">Résolution du TSP</span>]({{ site.baseurl }}/project/tsp-problem) : <span data-fr="Approche par programmation linéaire et heuristiques" data-en="Linear programming and heuristic approaches">Approche par programmation linéaire et heuristiques</span>
+- [<span data-fr="Anneau-étoile (Ring-Star)" data-en="Ring-Star">Anneau-étoile (Ring-Star)</span>]({{ site.baseurl }}/project/or/ring-star/ring-star) : <span data-fr="Heuristiques, option exacte PuLP, workflow reproductible" data-en="Heuristics, optional exact PuLP, reproducible workflow">Heuristiques, option exacte PuLP, workflow reproductible</span>
 
 ---
 
@@ -45,10 +45,8 @@ lang: fr
 
 ## <span data-fr="Derniers Travaux" data-en="Latest Work">Derniers Travaux</span>
 
-- **[<span data-fr="Anneau-etoile (Ring-Star)" data-en="Ring-Star Problem">Anneau-etoile (Ring-Star)</span>]({{ site.baseurl }}/project/ring-star)** : <span data-fr="Heuristiques + option exacte PuLP, workflow reproductible" data-en="Heuristics + optional exact PuLP, reproducible workflow">Heuristiques + option exacte PuLP, workflow reproductible</span>
-- **[<span data-fr="Dilemme du prisonnier itere" data-en="Iterated Prisoner's Dilemma">Dilemme du prisonnier itere</span>]({{ site.baseurl }}/project/dilemme-du-prisonnier)** : <span data-fr="Simulation multi-agents, RL et optimisation" data-en="Multi-agent simulation, RL and optimization">Simulation multi-agents, RL et optimisation</span>
-- **[<span data-fr="AquaticLife" data-en="AquaticLife">AquaticLife</span>]({{ site.baseurl }}/project/aquaticlife)** : <span data-fr="Co-evolution morphologie-controle en fluide 2D" data-en="Morphology-control co-evolution in 2D fluid">Co-evolution morphologie-controle en fluide 2D</span>
-- **[<span data-fr="Moteur de formules C++" data-en="C++ Formula Engine">Moteur de formules C++</span>]({{ site.baseurl }}/project/moteur-formules)** : <span data-fr="Parsing, derivation symbolique, export DOT" data-en="Parsing, symbolic differentiation, DOT export">Parsing, derivation symbolique, export DOT</span>
+- **[<span data-fr="Anneau-étoile (Ring-Star)" data-en="Ring-Star">Anneau-étoile (Ring-Star)</span>]({{ site.baseurl }}/project/or/ring-star/ring-star)** : <span data-fr="Optimisation combinatoire, heuristiques + option exacte PuLP, TSPLIB95" data-en="Combinatorial optimization, heuristics + optional exact PuLP, TSPLIB95">Optimisation combinatoire, heuristiques + option exacte PuLP, TSPLIB95</span>
+- **[<span data-fr="Moteur de formules C++" data-en="C++ Formula Engine">Moteur de formules C++</span>]({{ site.baseurl }}/project/moteur-formules)** : <span data-fr="Parsing, dérivation symbolique, export DOT" data-en="Parsing, symbolic differentiation, DOT export">Parsing, dérivation symbolique, export DOT</span>
 
 ---
 

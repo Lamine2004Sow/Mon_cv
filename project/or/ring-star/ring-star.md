@@ -53,18 +53,6 @@ Ou :
 - **Option exacte** via PuLP pour les petites instances.
 - **Visualisations** des stations, du cycle et des affectations.
 
-### Exemple de visualisation
-
-{% include demo.html 
-   type="matplotlib" 
-   id="ring-star-viz"
-   src="/project/or/ring-star/ring-star-solution.png"
-   title="Solution anneau-etoile"
-   description="Visualisation de la solution optimale avec les stations (rouge), le cycle (bleu) et les affectations (gris)"
-%}
-
-*Note : Pour ajouter une vraie visualisation interactive, placez votre image dans le dossier `assets/demos/` ou créez une démo Three.js pour une visualisation 3D interactive.*
-
 ---
 
 ## 3. Reproductibilite

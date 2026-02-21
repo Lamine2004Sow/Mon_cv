@@ -24,7 +24,7 @@ lang: fr
 - <span data-fr="Implémentation d'une heuristique (plus proche voisin)" data-en="Implementation of a heuristic (nearest neighbor)">Implémentation d'une heuristique (plus proche voisin)</span>
 - <span data-fr="Comparaison des résultats et analyse de performance" data-en="Results comparison and performance analysis">Comparaison des résultats et analyse de performance</span>
 
-[<span data-fr="📄 Lire le rapport complet" data-en="📄 Read the full report">📄 Lire le rapport complet</span>]({{ site.baseurl }}/project/tsp-problem)
+<span data-fr="Rapport à venir." data-en="Report coming soon.">Rapport à venir.</span>
 
 ---
 
@@ -32,7 +32,7 @@ lang: fr
 
 <span data-fr="Resolution complete d'instances TSPLIB95 avec heuristiques, descente stochastique et option exacte via PuLP, accompagnee de visualisations." data-en="Complete TSPLIB95 resolution with heuristics, stochastic descent, and an optional exact PuLP formulation, with visualizations.">Resolution complete d'instances TSPLIB95 avec heuristiques, descente stochastique et option exacte via PuLP, accompagnee de visualisations.</span>
 
-[<span data-fr="📄 Lire la page projet" data-en="📄 Read the project page">📄 Lire la page projet</span>]({{ site.baseurl }}/project/ring-star)
+[<span data-fr="📄 Lire la page projet" data-en="📄 Read the project page">📄 Lire la page projet</span>]({{ site.baseurl }}/project/or/ring-star/ring-star)
 
 ---
 
